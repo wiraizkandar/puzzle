@@ -4,8 +4,8 @@
 ?>
 <html>
     <head>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <?php include 'component/css.php';?>
+        
         <style>
             .login-container{
                 max-width: 450px;
@@ -19,7 +19,7 @@
         </style>
     </head>
     <body>
-       
+        
             <div class="login-container" style="">
                 <div style="text-align:center;padding:10px;"><h3>LOGIN</h3></div>
             <form class="form-horizontal">
@@ -42,15 +42,14 @@
                   </div>
                 </div>
                 <div style="margin-top: 40px;">
-                    <span><a href="#">Forgot Password</a></span>
-                    <span style="float:right;"><a href="#">Register</a></span>
+                    <span><a href="forgot.php">Forgot Password</a></span>
+                    <span style="float:right;"><a href="register.php">Register Now</a></span>
                 </div>
               </form>
                 </div>
      
     </body>
+    <?php include 'component/javascript.php';?>
     
-    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
 </html>
 
